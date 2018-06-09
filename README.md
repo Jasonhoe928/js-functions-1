@@ -227,6 +227,22 @@ set its `reviews` field to 1.
 
 **Returns**: object, the modified object
 
+//It should accept object
+    //Object should increment restaurant.reviews if restaurant.reviews
+    //If object does not have restaurant.reviews, create and set to 1
+
+function incrementReviews(restaurant) {
+    if restaurant has restaurant.reviews then incriment
+    else create restaurant.reviews = 1
+}
+
+function incrementReviews(restaurant) {
+    if (restaurant.reviews !== undefined) {
+        resturant.reviews++;
+    } else {
+        restaurant.reviews = 1;
+    }
+}
 
 combine(word1, word2)
 -----------------------------
